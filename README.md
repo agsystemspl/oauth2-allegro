@@ -1,6 +1,6 @@
 # Allegro Provider for OAuth 2.0 Client
 
-This package provides [Allegro](https://developers.allegro.pl) OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
+This package provides [Allegro](https://developer.allegro.pl) OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
 ## Usage
 
@@ -98,4 +98,4 @@ if ($existingAccessToken->hasExpired()) {
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/killmails/oauth2-eve/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/agsystemspl/oauth2-allegro/blob/master/LICENSE) for more information.
