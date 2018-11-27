@@ -1,0 +1,23 @@
+{
+    "name": "agsystemspl/oauth2-allegro",
+    "version": "1.0.0",
+    "description": "Allegro OAuth2 Client.",
+    "keywords": ["allegro", "oauth", "oauth2", "rest"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Feruś",
+            "email": "mindc@o2.pl"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"php": ">=7.0",
+        "league/oauth2-client": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AGSystems\\OAuth2\\Client\\": "src/"
+        }
+    }
+}
