@@ -1,6 +1,6 @@
 {
     "name": "agsystemspl/oauth2-allegro",
-    "version": "1.0.0",
+    "version": "0.9.0",
     "description": "Allegro OAuth2 Client.",
     "keywords": ["allegro", "oauth", "oauth2", "rest"],
     "license": "MIT",
