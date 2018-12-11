@@ -50,7 +50,7 @@ class Allegro extends AbstractProvider
 
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new AllegroResourceOwner($token);
+        return new EsiResourceOwner($token);
     }
 
     public function setOptionProvider(OptionProviderInterface $provider)
