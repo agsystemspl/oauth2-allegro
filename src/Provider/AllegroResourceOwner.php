@@ -20,7 +20,7 @@ class AllegroResourceOwner implements ResourceOwnerInterface
 
     public function getId()
     {
-        return $this->getValueByKey($this->claims, Esi::ACCESS_TOKEN_RESOURCE_OWNER_ID);
+        return $this->getValueByKey($this->claims, Allegro::ACCESS_TOKEN_RESOURCE_OWNER_ID);
     }
 
     public function toArray()
