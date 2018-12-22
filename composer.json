@@ -13,6 +13,7 @@
     "type": "library",
     "require": {
 		"php": ">=7.0",
+        "ext-json": "*",
         "league/oauth2-client": "^2.4"
     },
     "autoload": {
