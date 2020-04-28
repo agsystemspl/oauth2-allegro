@@ -28,12 +28,29 @@ class Allegro extends AbstractProvider
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://allegro.pl/auth/oauth/verify';
+        return 'https://api.allegro.pl/me';
     }
 
     protected function getDefaultScopes()
     {
-        return ['allegro_api'];
+        return [
+            'allegro:api:orders:read',
+            'allegro:api:profile:write',
+            'allegro:api:sale:offers:write',
+            'allegro:api:billing:read',
+            'allegro:api:campaigns',
+            'allegro:api:disputes',
+            'allegro:api:sale:offers:read',
+            'allegro:api:bids',
+            'allegro:api:orders:write',
+            'allegro:api:ads',
+            'allegro:api:payments:write',
+            'allegro:api:sale:settings:write',
+            'allegro:api:profile:read',
+            'allegro:api:ratings',
+            'allegro:api:sale:settings:read',
+            'allegro:api:payments:read'
+        ];
     }
 
     protected function getScopeSeparator()
@@ -50,17 +67,12 @@ class Allegro extends AbstractProvider
 
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new AllegroResourceOwner($token);
+        return new AllegroResourceOwner($response);
     }
 
     public function setOptionProvider(OptionProviderInterface $provider)
     {
         $provider = new HttpBasicAuthOptionProvider();
         return parent::setOptionProvider($provider);
-    }
-
-    public function getResourceOwner(AccessToken $token)
-    {
-        return $this->createResourceOwner([], $token);
     }
 }
