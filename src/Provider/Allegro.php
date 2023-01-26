@@ -34,22 +34,24 @@ class Allegro extends AbstractProvider
     protected function getDefaultScopes()
     {
         return [
-            'allegro:api:orders:read',
-            'allegro:api:profile:write',
-            'allegro:api:sale:offers:write',
-            'allegro:api:billing:read',
-            'allegro:api:campaigns',
-            'allegro:api:disputes',
-            'allegro:api:sale:offers:read',
-            'allegro:api:bids',
-            'allegro:api:orders:write',
-            'allegro:api:ads',
-            'allegro:api:payments:write',
-            'allegro:api:sale:settings:write',
             'allegro:api:profile:read',
+            'allegro:api:profile:write',
+            'allegro:api:sale:offers:read',
+            'allegro:api:sale:offers:write',
+            'allegro:api:orders:read',
+            'allegro:api:orders:write',
             'allegro:api:ratings',
+            'allegro:api:disputes',
+            'allegro:api:bids',
+            'allegro:api:messaging',
+            'allegro:api:billing:read',
+            'allegro:api:payments:read',
+            'allegro:api:payments:write',
             'allegro:api:sale:settings:read',
-            'allegro:api:payments:read'
+            'allegro:api:sale:settings:write',
+            'allegro:api:campaigns',
+            'allegro:api:fulfillment:read',
+            'allegro:api:fulfillment:write'
         ];
     }
 
